@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
   name: "deepl-cui-swift",
+  products: [
+    .executable(name: "deepl-cui-swift", targets: ["deepl-cui-swift"])
+  ],
   dependencies: [
     .package(url: "https://github.com/apple/swift-argument-parser", .upToNextMinor(from: "0.3.0"))
   ],
